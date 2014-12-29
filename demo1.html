@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script src="jquery-1.4.1.min.js"></script>
+  <script src="canvaslayer.js"></script>
+  <title>demo 1</title>
+ </head>
+ <body>
+ <canvas  id ="myCanvas" ></canvas> 
+ <script>
+ $canvas = canvasFn.setCanVas( '#myCanvas', 800, 800 );
+ var $layer = $canvas.addImg( 'demo_img/pig.jpg',{});
+ console.log($layer);
+ </script>
+ </body>
+</html>
