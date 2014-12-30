@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <script src="jquery-1.4.1.min.js"></script>
+  <script src="canvaslayer.js"></script>
+  <title>demo -- add layer</title>
+ </head>
+ <body>
+ <canvas  id ="myCanvas" ></canvas> 
+ <script>
+ $canvas = canvasFn.setCanVas( '#myCanvas', 800, 800 );
+ $layer = $canvas.createLayerAndIn({color:'#f00'});
+ $layer2 = $canvas.createLayerAndIn({color:'#00f','x':100,y:100,width:10,height:300});
+ $layer2.scale(2);
+ $layer3 = $canvas.createLayerAndIn({txt:'hello world','x':200,y:100,color:'#f00',css:{fontcolor:'#00f'}});
+</script>
+ </body>
+</html>
